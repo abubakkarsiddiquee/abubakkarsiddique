@@ -1,0 +1,70 @@
+import React from "react";
+
+export default function Portfolio() {
+  return (
+    <main className="min-h-screen font-sans bg-white text-gray-900 p-6 max-w-3xl mx-auto">
+      {/* Hero Section */}
+      <section className="text-center my-12">
+        <h1 className="text-4xl font-bold">Abubakkar Siddique</h1>
+        <p className="mt-2 text-lg">Full‑Stack Developer | AI Research Enthusiast</p>
+      </section>
+
+      {/* About Section */}
+      <section className="my-10">
+        <h2 className="text-2xl font-semibold mb-4">About Me</h2>
+        <p>
+          I'm a Full‑Stack Developer and AI Researcher from Bangladesh, passionate about 
+          building meaningful applications in healthcare, data engineering, and security. 
+          I love blending AI with impactful problem-solving.
+        </p>
+      </section>
+
+      {/* Skills Section */}
+      <section className="my-10">
+        <h2 className="text-2xl font-semibold mb-4">Skills</h2>
+        <ul className="list-disc list-inside">
+          <li>Frontend: React, Tailwind CSS, Next.js, React Native</li>
+          <li>Backend: Node.js, Express.js, TypeScript</li>
+          <li>Databases: MySQL, MongoDB</li>
+          <li>ML/AI: Python, TensorFlow, Scikit-learn</li>
+          <li>Others: Git, REST API, Web Scraping</li>
+        </ul>
+      </section>
+
+      {/* Projects Section */}
+      <section className="my-10">
+        <h2 className="text-2xl font-semibold mb-4">Projects</h2>
+        <ul className="space-y-4">
+          <li>
+            <strong>HealthTrack</strong>: A Medical Management System for healthcare professionals.
+          </li>
+          <li>
+            <strong>BazaarTrack</strong>: Local Price Tracker with web scraping for daily commodities.
+          </li>
+          <li>
+            <strong>BabyCry Decoder</strong>: CNN-powered mobile app to detect baby cry types.
+          </li>
+          <li>
+            <strong>Blood Donation Tracker</strong>: React Native + Node.js tracker for donations.
+          </li>
+        </ul>
+      </section>
+
+      {/* Resume Section */}
+      <section className="my-10">
+        <h2 className="text-2xl font-semibold mb-4">Resume</h2>
+        <p>
+          <a href="#" className="text-blue-600 underline">Download Resume (PDF)</a>
+        </p>
+      </section>
+
+      {/* Contact Section */}
+      <section className="my-10">
+        <h2 className="text-2xl font-semibold mb-4">Contact</h2>
+        <p>Email: <a href="mailto:your-email@example.com" className="text-blue-600 underline">your-email@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/abubakkarsiddique" target="_blank" className="text-blue-600 underline">github.com/abubakkarsiddique</a></p>
+        <p>LinkedIn: <a href="#" className="text-blue-600 underline">Your LinkedIn Profile</a></p>
+      </section>
+    </main>
+  );
+}
