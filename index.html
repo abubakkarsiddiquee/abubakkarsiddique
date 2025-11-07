@@ -1,70 +1,194 @@
-import React from "react";
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Abubakkar Siddique</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Simple dark mode toggle without Tailwind */
+        body.dark {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+        }
+        body.dark a { color: #4ea1f3; }
+        .dark-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 6px 12px;
+            border-radius: 6px;
+            background: #ddd;
+            cursor: pointer;
+            z-index: 999;
+        }
+        .dark .dark-toggle { background: #444; color: #f0f0f0; }
+    </style>
+</head>
+<body class="is-preload">
 
-export default function Portfolio() {
-  return (
-    <main className="min-h-screen font-sans bg-white text-gray-900 p-6 max-w-3xl mx-auto">
-      {/* Hero Section */}
-      <section className="text-center my-12">
-        <h1 className="text-4xl font-bold">Abubakkar Siddique</h1>
-        <p className="mt-2 text-lg">Full‑Stack Developer | AI Research Enthusiast</p>
-      </section>
+    <!-- Dark Mode Toggle -->
+    <div class="dark-toggle" id="dark-toggle">🌙 Dark Mode</div>
 
-      {/* About Section */}
-      <section className="my-10">
-        <h2 className="text-2xl font-semibold mb-4">About Me</h2>
-        <p>
-          I'm a Full‑Stack Developer and AI Researcher from Bangladesh, passionate about 
-          building meaningful applications in healthcare, data engineering, and security. 
-          I love blending AI with impactful problem-solving.
-        </p>
-      </section>
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-      {/* Skills Section */}
-      <section className="my-10">
-        <h2 className="text-2xl font-semibold mb-4">Skills</h2>
-        <ul className="list-disc list-inside">
-          <li>Frontend: React, Tailwind CSS, Next.js, React Native</li>
-          <li>Backend: Node.js, Express.js, TypeScript</li>
-          <li>Databases: MySQL, MongoDB</li>
-          <li>ML/AI: Python, TensorFlow, Scikit-learn</li>
-          <li>Others: Git, REST API, Web Scraping</li>
-        </ul>
-      </section>
+        <!-- Header -->
+        <header id="header" class="alt">
+            <a href="index.html" class="logo"><strong>Abubakkar Siddique</strong> Homepage</a>
+            <nav><a href="#menu">Menu</a></nav>
+        </header>
 
-      {/* Projects Section */}
-      <section className="my-10">
-        <h2 className="text-2xl font-semibold mb-4">Projects</h2>
-        <ul className="space-y-4">
-          <li>
-            <strong>HealthTrack</strong>: A Medical Management System for healthcare professionals.
-          </li>
-          <li>
-            <strong>BazaarTrack</strong>: Local Price Tracker with web scraping for daily commodities.
-          </li>
-          <li>
-            <strong>BabyCry Decoder</strong>: CNN-powered mobile app to detect baby cry types.
-          </li>
-          <li>
-            <strong>Blood Donation Tracker</strong>: React Native + Node.js tracker for donations.
-          </li>
-        </ul>
-      </section>
+        <!-- Menu -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="research.html">Research Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="travelling.html">Travelling</a></li>
+                <a href="https://drive.google.com/file/d/your_resume_link" target="_blank" class="button small fit" style="background-color:rgb(243, 150, 11);"><b style="font-size:15px">Academic CV</b></a>
+            </ul>
+        </nav>
 
-      {/* Resume Section */}
-      <section className="my-10">
-        <h2 className="text-2xl font-semibold mb-4">Resume</h2>
-        <p>
-          <a href="#" className="text-blue-600 underline">Download Resume (PDF)</a>
-        </p>
-      </section>
+        <!-- Banner -->
+        <section id="banner" class="major" style="background-image: url('assets/images/banner2lr.jpg');">
+            <div class="inner">
+                <header class="major"><h1>Abubakkar Siddique</h1></header>
+                <div class="content">
+                    <p>Full-Stack Developer & AI/ML Security Researcher from Bangladesh. Passionate about healthcare, data engineering, and ML security projects.</p>
+                </div>
+                <ul class="icons">
+                    <li><a href="mailto:awubakkarsiddique444@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/abubakkar--siddique/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/abubakkarsiddiquee" class="icon brands alt fa-github"><span class="label">Github</span></a></li>
+                </ul>
+            </div>
+        </section>
 
-      {/* Contact Section */}
-      <section className="my-10">
-        <h2 className="text-2xl font-semibold mb-4">Contact</h2>
-        <p>Email: <a href="mailto:your-email@example.com" className="text-blue-600 underline">your-email@example.com</a></p>
-        <p>GitHub: <a href="https://github.com/abubakkarsiddique" target="_blank" className="text-blue-600 underline">github.com/abubakkarsiddique</a></p>
-        <p>LinkedIn: <a href="#" className="text-blue-600 underline">Your LinkedIn Profile</a></p>
-      </section>
-    </main>
-  );
-}
+        <!-- Main Sections -->
+        <div id="main">
+
+            <!-- Affiliations -->
+            <section id="two" class="spotlights">
+                <section>
+                    <a class="image" style="width: fit-content;">
+                        <img src="assets/images/profile.jpg" alt="" data-position="top center" />
+                    </a>
+                    <div class="content">
+                        <div class="inner">
+                            <header class="major"><h3>AFFILIATIONS</h3></header>
+                            <ul>
+                                <li>Research Team Member | Quantum.ai | August 2020 - Present</li>
+                                <li>Team Lead | ACM Student Chapter | June 2021 - Present</li>
+                                <li>Teaching Assistant | North South University | March 2021 - Present</li>
+                                <li>BSc | Computer Science & Engineering, NSU | January 2018 - Present</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Tiles -->
+            <section id="one" class="tiles">
+                <article>
+                    <span class="image"><img src="assets/images/academic.jpg" alt="" /></span>
+                    <header class="major">
+                        <h3><a href="academics.html">Academics</a></h3>
+                        <p>Learning never exhausts the mind</p>
+                    </header>
+                </article>
+                <article>
+                    <span class="image"><img src="assets/images/research.jpg" alt="" /></span>
+                    <header class="major">
+                        <h3><a href="research.html">Research Experience</a></h3>
+                        <p>Creating New Knowledge</p>
+                    </header>
+                </article>
+                <article>
+                    <span class="image"><img src="assets/images/project.jpg" alt="" /></span>
+                    <header class="major">
+                        <h3><a href="projects.html">Projects</a></h3>
+                        <p>Exercising Creativity</p>
+                    </header>
+                </article>
+                <article>
+                    <span class="image"><img src="assets/images/work.jpg" alt="" /></span>
+                    <header class="major">
+                        <h3><a href="experiences.html">Experiences</a></h3>
+                        <p>Striving to become better</p>
+                    </header>
+                </article>
+                <article>
+                    <span class="image"><img src="assets/images/award.jpg" alt="" /></span>
+                    <header class="major">
+                        <h3><a href="achievements.html">Achievements</a></h3>
+                        <p>Hard work, perseverance & self-belief</p>
+                    </header>
+                </article>
+                <article>
+                    <span class="image"><img src="assets/images/mountain.jpg" alt="" /></span>
+                    <header class="major">
+                        <h3><a href="travelling.html">Travelling</a></h3>
+                        <p>Lost in The Right Direction</p>
+                    </header>
+                </article>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact">
+                <div class="inner">
+                    <section style="float:left;">
+                        <div class="contact-method">
+                            <span class="icon solid alt fa-envelope"></span>
+                            <h3>Email</h3>
+                            <a href="mailto:awubakkarsiddique444@gmail.com">awubakkarsiddique444@gmail.com</a>
+                        </div>
+                    </section>
+                    <section style="float:right;">
+                        <div class="contact-method">
+                            <span class="icon solid alt fa-home"></span>
+                            <h3>Mailing Address</h3>
+                            <span>Dhaka, Bangladesh</span>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="mailto:awubakkarsiddique444@gmail.com" class="icon solid alt fa-envelope"><span>Email</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/abubakkar--siddique/" class="icon brands alt fa-linkedin-in"><span>LinkedIn</span></a></li>
+                    <li><a href="https://github.com/abubakkarsiddiquee" class="icon brands alt fa-github"><span>Github</span></a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Dark Mode Script -->
+    <script>
+        const toggle = document.getElementById('dark-toggle');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            toggle.textContent = document.body.classList.contains('dark') ? '☀️ Light Mode' : '🌙 Dark Mode';
+        });
+    </script>
+
+</body>
+</html>
